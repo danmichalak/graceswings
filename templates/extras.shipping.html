@@ -1,0 +1,27 @@
+<div class="extras-title"><strong>Random Ship Generator</strong></div>
+<div>Press the "SHIP" button below to get a new ship!</div>
+<br/><br/>
+<div class="row">
+	<div class="col-xs-6 shipping-character-name" ng-bind-html="character1.name"></div>
+	<div class="col-xs-6 shipping-character-name" ng-bind-html="character2.name"></div>
+</div>
+<div class="row">
+	<div class="col-xs-6">
+		<div class="character-portrait">
+			<img ng-src="./img/icons/cast/{{character1.shortName}}Portrait.png"/>
+		</div>
+	</div>
+	<div class="col-xs-6">
+		<div class="character-portrait">
+			<img ng-src="./img/icons/cast/{{character2.shortName}}Portrait.png"/>
+		</div>
+	</div>
+</div>
+<div class="row"></div>
+<br/>
+<div><strong>Our Thoughts</strong></div>
+<div ng-bind-html="message"></div>
+<br/>
+<a href="javascript:history.go(0)"><div id="shipping-button">&hearts;&nbsp;SHIP&nbsp;&hearts;</div></a>
+<br/><br/>
+<div>Note: This generator will be updated as we introduce more characters (and come up with more bad puns)</div>

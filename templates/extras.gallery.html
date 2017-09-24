@@ -1,0 +1,11 @@
+<div ng-repeat="galleryItem in gallery">
+	<strong><div ng-bind-html="galleryItem.title"></div></strong>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-{{galleryItem.size}}">
+			<div class="extras-image">
+				<img ng-src="./img/{{galleryName}}/{{galleryItem.name}}.{{galleryItem.fileType}}" alt="{{galleryItem.title}}"/>
+			</div>
+		</div>
+	</div>
+	<div ng-bind-html="galleryItem.description" class="extras-desc"></div>
+</div>

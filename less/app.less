@@ -1,0 +1,253 @@
+/* Font Faces */
+@font-face {
+	font-family: 'arbonnie';
+	src: local('arbonnie'), url('../fonts/arbonnie.ttf')format('truetype');
+}
+
+@text-bg: #f7f4ea;;
+
+
+html, body {
+	// Prevent horizontal scroll when ads stretch screen on mobile
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+html {
+	height:100%;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100%;
+	position: relative;
+	margin: 0;
+	background-image:url("/dev/img/ghostbg.png");
+	background-size: 300px 300px;
+}
+
+footer {
+	background: black;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	a {
+		color: white!important;
+		text-decoration: none!important;
+		&:hover {
+			color: #337ab7!important;
+		}
+	}
+
+	.twc-col { text-align: right; }
+	.copy-col { text-align: center; }
+}
+
+.adContainer {
+	width: 728px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+.nav-button {
+	background: black;
+	color: white;
+	font-family: arbonnie;
+	text-align: center;
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.nav-row {
+	background: #000;
+}
+
+// main container for dynamic content rows
+#content-container {
+	min-height: 100%;
+}
+
+// different types of dynamic content rows
+.content-row, .nav-row {
+	margin-bottom: 20px;
+}
+
+.chapter-row, .cast-row {
+	margin-bottom: 10px;
+}
+
+[type="page-nav-1"], [type="page-nav-2"], [type="content-image"] {
+	margin-bottom: 0;
+}
+
+.content-row[type^="page-nav-"] { background: black; }
+.text-container {
+	background: @text-bg;
+	padding: 15px;
+	border: 1px solid black;
+	p { word-wrap: break-word; }
+	p:last-of-type { margin-bottom: 0; }
+}
+
+.image-container {
+	background: black;
+	border: 1px solid black;
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+// archive page
+.chapter-row {
+	background: black;
+	border: 1px solid black;
+	display: block;
+}
+
+.chapter-row, .chapter-row:hover, .chapter-row:active, .chapter-row:focus {
+	color: white;
+	font-family: arbonnie;
+	text-decoration: none;
+}
+
+.site-nav {
+	.nav-icon {
+		width: 50px;
+		heigh: auto;
+	}
+}
+
+.chapter-icon {
+	width: 100px;
+	height: auto;
+	float: left;
+}
+
+.chapter-title {
+	padding: 0px 15px;
+	float: left;
+	line-height: 100px;
+	font-size: 28px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+// cast page and extras pages
+.cast-row {
+	background: @text-bg;
+	border: 1px solid black;
+	padding: 15px;
+}
+
+.cast-group-row {
+	&:nth-of-type(n+2) {
+		margin-top: 20px;
+	}
+}
+
+.group-label {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.character-row {
+	&:nth-of-type(n+3) {
+		margin-top: 10px;
+	}
+}
+
+.character-label {
+	font-weight: bold;
+}
+
+.character-portrait {
+	width: 100px;
+	height: 100px;
+}
+
+.extras-image {
+	width: 100%;
+}
+
+.character-portrait, .extras-image {
+	border: 1px solid black;
+	position: relative;
+
+	img {
+		width: 100%;
+		height: auto;
+
+		&:nth-of-type(1) {
+			position: relative;
+		}
+
+		&:nth-of-type(2) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: opacity 1s;
+			opacity: 1;
+			&:hover {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+.extras-container {
+	border: 1px solid black;
+	background: @text-bg;
+	margin-bottom: 20px;
+	.extras-sidebar {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background: black;
+		font-family: arbonnie;
+		font-size: 24px;
+	}
+	.sidebar-btn {
+		color: white;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.extras-content {
+		padding: 15px;
+	}
+}
+
+.extras-desc {
+	margin-bottom: 20px;
+}
+
+.shipping-character-name {
+	font-weight: bold;
+}
+
+#shipping-button {
+	display: inline-block;
+	font-family: arbonnie;
+	font-weight: bold;
+	font-size: 24px;
+	color: #F0F;
+	background: #000;
+	width: auto;
+	padding: 5px 10px;
+}
+
+// Formatting the "extras" sub-menu on certain screens
+@media only screen and (min-width : 768px) {
+	.extras-container {
+		display: table;
+	}
+	.extras-container > [class*="col-"] {
+		float: none;
+		display: table-cell;
+		vertical-align: top;
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "gw",
+  "version": "2.0.0",
+  "description": "Grace's Wings website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --hot"
+  },
+  "author": "Dan Michalak",
+  "license": "MIT",
+  "dependencies": {
+    "less": "^2.7.2"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "gulp": "^3.9.1",
+    "gulp-less-watcher": "^0.5.0",
+    "gulp-load-plugins": "^1.5.0",
+    "less-loader": "^4.0.3",
+    "style-loader": "^0.17.0",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.4.1"
+  }
+}

@@ -1,0 +1,10 @@
+<div ng-repeat="chapter in chapters" class="row">
+	<div class="hidden-xs col-sm-3"></div>
+	<div class="col-xs-12 col-sm-6">
+		<a ui-sref="comicpage({ comic: comic, page: chapter.coverpage })" class="row chapter-row">
+			<img ng-src="./img/icons/comics/{{comic}}/{{comic}}Chapter{{$index+1}}.png" class="chapter-icon"/>
+			<div class="chapter-title" style="width: calc(100% - 100px);">Chapter {{$index+1}} - {{chapter.title}}</div>
+		</a>
+	</div>
+	<div class="hidden-xs col-sm-3"></div>
+</div>

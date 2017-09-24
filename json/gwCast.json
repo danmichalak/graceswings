@@ -1,0 +1,158 @@
+[
+	{
+		"groupName": "main",
+		"characters": [
+			{
+				"name": "Nadia Iamavich",
+				"shortName": "nadia",
+				"hasAlt": false,
+				"description": "A for-hire exorcist and paranormal investigator. Often does investigation work for the Knights Templar.",
+				"gender": "f",
+				"firstAppearance": 1
+			},
+			{
+				"name": "\"Jim\"",
+				"shortName": "jim",
+				"hasAlt": false,
+				"description": "A creature sealed within Nadia after a botched exorcism.",
+				"gender": "n",
+				"firstAppearance": 1
+			},
+			{
+				"name": "Nikail Iamavich",
+				"shortName": "nikail",
+				"hasAlt": false,
+				"description": "Nadia's cousin. <a href=\"https://www.youtube.com/watch?v=UxFH0bbQMA4\">Recently returned from overseas with 75% of her previous total arm mass</a>.",
+				"gender": "f",
+				"firstAppearance": 2
+			},
+			{
+				"name": "Josephine",
+				"shortName": "josephine",
+				"hasAlt": false,
+				"description": "Grandmaster of the Knights Templar.",
+				"gender": "f",
+				"firstAppearance": 2
+			}
+		]
+	},
+	{
+		"groupName": "Sera Corp",
+		"characters": [
+			{
+				"name": "Malcolm Benedict",
+				"shortName": "malcolm",
+				"hasAlt": false,
+				"description": "Chief Security Officer of Sera Corp",
+				"gender": "m",
+				"firstAppearance": 4
+			},
+			{
+				"name": "Dr. Sergei Zielkman",
+				"shortName": "zielkman",
+				"hasAlt": false,
+				"description": "Chief Science Officer of Sera Corp",
+				"gender": "m",
+				"firstAppearance": 7
+			},
+			{
+				"name": "Agent Jackson \"Jax\" McCormick",
+				"shortName": "jax",
+				"hasAlt": false,
+				"description": "A loud dork that works for SeraCorp Security",
+				"gender": "m",
+				"firstAppearance": 4
+			},
+			{
+				"name": "Agent Ezekiel \"Zeke\" Krazitz",
+				"shortName": "zeke",
+				"hasAlt": false,
+				"description": "A quiet dork that works for SeraCorp Security",
+				"gender": "m",
+				"firstAppearance": 4
+			},
+			{
+				"name": "Dr. Tohane Omori",
+				"shortName": "tohane",
+				"hasAlt": false,
+				"description": "A dorky scientist that works for SeraCorp Medical",
+				"gender": "f",
+				"firstAppearance": 4
+			}
+		]
+	},
+	{
+		"groupName": "Vampires",
+		"characters": [
+			{
+				"name": "Layla Omorose",
+				"shortName": "layla",
+				"hasAlt": false,
+				"description": "Matriarch of the Omorose Vampire Coven.",
+				"gender": "f",
+				"firstAppearance": 3
+			},
+			{
+				"name": "Badru Omorose",
+				"shortName": "badru",
+				"hasAlt": false,
+				"description": "Patriarch of the Omorose Vampire Coven.",
+				"gender": "m",
+				"firstAppearance": 3
+			},
+			{
+				"name": "Adele",
+				"shortName": "adele",
+				"hasAlt": false,
+				"description": "A former member of the Omorose Vampire Coven, now blacklisted due to breaking the Sanguine Pact.",
+				"gender": "f",
+				"firstAppearance": 3
+			},
+			{
+				"name": "Adder",
+				"shortName": "adder",
+				"hasAlt": false,
+				"description": "A member of the Omorose Vampire Coven.",
+				"gender": "m",
+				"firstAppearance": 3
+			}
+		]
+	},
+	{
+		"groupName": "Others",
+		"characters": [
+			{
+				"name": "Lily",
+				"shortName": "lily",
+				"hasAlt": true,
+				"description": "A proprietor of a magic shop that isn't what she seems...",
+				"gender": "f",
+				"firstAppearance": 4
+			},
+			{
+				"name": "Nick",
+				"shortName": "nick",
+				"hasAlt": false,
+				"description": "A divination mage and friend of Lily's",
+				"gender": "m",
+				"firstAppearance": 4
+			},
+			{
+				"name": "Ray",
+				"shortName": "ray",
+				"hasAlt": false,
+				"description": "A transmutation mage and friend of Lily's",
+				"gender": "m",
+				"firstAppearance": 4
+			},
+			{
+				"name": "Trish",
+				"shortName": "trish",
+				"hasAlt": false,
+				"description": "A life magic specialist and friend of Lily's",
+				"gender": "f",
+				"firstAppearance": 4
+			}
+		]
+	}
+]

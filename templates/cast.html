@@ -1,0 +1,16 @@
+<div class="row cast-row">
+	<div ng-repeat="group in groups" class="row cast-group-row">
+		<div class="col-xs-12">
+			<div ng-bind-html="group.groupName" ng-hide="group.groupName=='main'" class="group-label"></div>
+			<div ng-repeat="character in group.characters" class="character-row">
+				<div ng-bind-html="character.name" class="character-label"></div>
+				<!--<img ng-src="./img/icons/cast/{{character.shortName}}Portrait.png" class="character-portrait"/>-->
+				<div class="character-portrait">
+					<img ng-repeat="image in character.images" ng-src="./img/icons/cast/{{image.name}}.png"/>
+				</div>
+				<div ng-bind-html="character.description"></div>
+				<div><b>First Appearance:</b> <a ui-sref="comicpage({ comic: comic, page: character.firstAppearancePage })">Chapter {{character.firstAppearance}}</a>
+			</div>
+		</div>
+	</div>
+</div>
